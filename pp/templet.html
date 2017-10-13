@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml2/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+
+<link rel="stylesheet" type="text/css" href="assets/efluidmenu.css" />
+<link href="styles/my_css.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="assets/efluidmenu.js">
+</script>
+
+<link href="my_css1.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="ddaccordion.js">
+</script>
+<script type="text/javascript">
+
+
+ddaccordion.init({
+	headerclass: "expandable", //Shared CSS class name of headers group that are expandable
+	contentclass: "categoryitems", //Shared CSS class name of contents group
+	revealtype: "click", //Reveal content when user clicks or onmouseover the header? Valid value: "click", "clickgo", or "mouseover"
+	mouseoverdelay: 200, //if revealtype="mouseover", set delay in milliseconds before header expands onMouseover
+	collapseprev: true, //Collapse previous content (so only one open at any time)? true/false 
+	defaultexpanded: [0], //index of content(s) open by default [index1, index2, etc]. [] denotes no content
+	onemustopen: false, //Specify whether at least one header should be open always (so never all headers closed)
+	animatedefault: false, //Should contents open by default be animated into view?
+	persiststate: true, //persist state of opened contents within browser session?
+	toggleclass: ["", "openheader"], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+	togglehtml: ["prefix", "", ""], //Additional HTML added to the header when it's collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs)
+	animatespeed: "fast", //speed of animation: integer in milliseconds (ie: 200), or keywords "fast", "normal", or "slow"
+	oninit:function(headers, expandedindices){ //custom code to run when headers have initalized
+		//do nothing
+	},
+	onopenclose:function(header, index, state, isuseractivated){ //custom code to run whenever a header is opened or closed
+		//do nothing
+	}
+})
+</script>
+
+</head>
+
+<body>
+
+<div id="fluidmenu1" class="efluidmenu"> <a class="efluid-animateddrawer" href="#"> <span></span> </a>
+  <ul>
+    <li><a href="http://www.google.com">HOME</a></li>
+    <li><a href="http://www.google.com">TOPICS</a>
+      <ul>
+        <li><a href="http://www.google.com">Secrets of Nature</a></li>
+        <li><a href="http://www.google.com">Space and the future</a></li>
+        <li><a href="http://www.google.com">robotics</a></li>
+        <li><a href="http://www.google.com">Facts about animals</a></li>
+        <li><a href="http://www.google.com">wonders of the seas</a></li>
+        <li><a href="http://www.google.com">humans</a></li>
+        <li><a href="http://www.google.com">Medical and health</a></li>
+        <li><a href="http://www.google.com">history</a></li>
+        <li><a href="http://www.google.com">inventions and innovations</a></li>
+      </ul>
+    </li>
+    <li><a href="http://www.google.com">VIDEOS</a></li>
+    <li><a href="http://www.google.com">CONTACT</a></li>
+    <li><a href="http://www.google.com/style/">ABOUT-US</a></li>
+    <li id="search">
+      <form id="topform" method="get" action="http://www.google.com/search/search.php">
+        <input type="text" name="zoom_query" id="zoom_query" size="20" class="zoom_searchbox topsearchbox" placeholder="search">
+        <input id="query_submit" type="image" src="assets/magnify.gif" />
+        <input name="zoom_per_page" id="zoom_per_page" type="hidden" value="10" />
+        <input name="zoom_and" id="zoom_and" type="hidden" value="1" />
+        <input type="hidden" name="zoom_sort" value="0" />
+      </form>
+    </li>
+  </ul>
+</div>
+
+<div id="container">
+  
+  <div class="arrowlistmenu">
+  <h3 class="menuheader expandable">Secrets of Nature</h3>
+  <ul class="categoryitems">
+    <li><a href="#">Horizontal CSS Menus</a></li>
+    <li><a href="#">Vertical CSS Menus</a></li>
+    <li><a href="#">Image CSS</a></li>
+    <li><a href="#">Form CSS</a></li>
+    <li><a href="#">DIVs and containers</a></li>
+    <li><a href="#">Links & Buttons</a></li>
+    <li><a href="#">Other</a></li>
+    <li><a href="#">Browse All</a></li>
+  </ul>
+  <h3 class="menuheader expandable">Space and future</h3>
+  <ul class="categoryitems">
+    <li><a href="#">Horizontal CSS Menus</a></li>
+    <li><a href="#">Vertical CSS Menus</a></li>
+    <li><a href="#">Image CSS</a></li>
+    <li><a href="#">Form CSS</a></li>
+    <li><a href="#">DIVs and containers</a></li>
+    <li><a href="#">Links & Buttons</a></li>
+    <li><a href="#">Other</a></li>
+    <li><a href="#">Browse All</a></li>
+  </ul>
+  <h3 class="menuheader expandable">robotics</h3>
+  <ul class="categoryitems">
+    <li><a href="#">Horizontal CSS Menus</a></li>
+    <li><a href="#">Vertical CSS Menus</a></li>
+    <li><a href="#">Image CSS</a></li>
+    <li><a href="#">Form CSS</a></li>
+    <li><a href="#">DIVs and containers</a></li>
+    <li><a href="#">Links & Buttons</a></li>
+    <li><a href="#">Other</a></li>
+    <li><a href="#">Browse All</a></li>
+  </ul>
+  <h3 class="menuheader expandable">Facts about animals</h3>
+  <ul class="categoryitems">
+    <li><a href="#">Horizontal CSS Menus</a></li>
+    <li><a href="#">Vertical CSS Menus</a></li>
+    <li><a href="#">Image CSS</a></li>
+    <li><a href="#">Form CSS</a></li>
+    <li><a href="#">DIVs and containers</a></li>
+    <li><a href="#">Links & Buttons</a></li>
+    <li><a href="#">Other</a></li>
+    <li><a href="#">Browse All</a></li>
+  </ul>
+  <h3 class="menuheader expandable">wonders of the seas</h3>
+  <ul class="categoryitems">
+    <li><a href="#">Horizontal CSS Menus</a></li>
+    <li><a href="#">Vertical CSS Menus</a></li>
+    <li><a href="#">Image CSS</a></li>
+    <li><a href="#">Form CSS</a></li>
+    <li><a href="#">DIVs and containers</a></li>
+    <li><a href="#">Links & Buttons</a></li>
+    <li><a href="#">Other</a></li>
+    <li><a href="#">Browse All</a></li>
+  </ul>
+  <h3 class="menuheader expandable">humans</h3>
+  <ul class="categoryitems">
+    <li><a href="#">Horizontal CSS Menus</a></li>
+    <li><a href="#">Vertical CSS Menus</a></li>
+    <li><a href="#">Image CSS</a></li>
+    <li><a href="#">Form CSS</a></li>
+    <li><a href="#">DIVs and containers</a></li>
+    <li><a href="#">Links & Buttons</a></li>
+    <li><a href="#">Other</a></li>
+    <li><a href="#">Browse All</a></li>
+  </ul>
+  <h3 class="menuheader expandable">Medical and health</h3>
+  <ul class="categoryitems">
+    <li><a href="#">Horizontal CSS Menus</a></li>
+    <li><a href="#">Vertical CSS Menus</a></li>
+    <li><a href="#">Image CSS</a></li>
+    <li><a href="#">Form CSS</a></li>
+    <li><a href="#">DIVs and containers</a></li>
+    <li><a href="#">Links & Buttons</a></li>
+    <li><a href="#">Other</a></li>
+    <li><a href="#">Browse All</a></li>
+  </ul>
+  <h3 class="menuheader expandable">history</h3>
+  <ul class="categoryitems">
+    <li><a href="#">Horizontal CSS Menus</a></li>
+    <li><a href="#">Vertical CSS Menus</a></li>
+    <li><a href="#">Image CSS</a></li>
+    <li><a href="#">Form CSS</a></li>
+    <li><a href="#">DIVs and containers</a></li>
+    <li><a href="#">Links & Buttons</a></li>
+    <li><a href="#">Other</a></li>
+    <li><a href="#">Browse All</a></li>
+  </ul>
+  <h3 class="menuheader expandable">inventions and innovations</h3>
+  <ul class="categoryitems">
+    <li><a href="#">Horizontal CSS Menus</a></li>
+    <li><a href="#">Vertical CSS Menus</a></li>
+    <li><a href="#">Image CSS</a></li>
+    <li><a href="#">Form CSS</a></li>
+    <li><a href="#">DIVs and containers</a></li>
+    <li><a href="#">Links & Buttons</a></li>
+    <li><a href="#">Other</a></li>
+    <li><a href="#">Browse All</a></li>
+  </ul>
+</div>
+  
+</div>
+  
+
+</body>
+</html>
